@@ -1,4 +1,20 @@
-﻿ **最小安装选项：**
+﻿**学习资料推荐：**
+
+- 文档类
+
+    1. [cairo-book](https://cairo-book.github.io/title-page.html), 社区中的成员模仿 [rust-book](https://doc.rust-lang.org/book/) 写的一本书，目前是相对较全面的一份资料
+    2. [Cairo Github仓库里的文档](https://github.com/starkware-libs/cairo/tree/main/docs/reference/src/components/cairo/modules/language_constructs/pages)，这是官方文档，但是还在撰写中
+    3. [一位来自 Argent X 的非洲励志哥总结的文档](https://github.com/Starknet-Africa-Edu/Cairo1.0/tree/main/chapters)
+
+- 代码案例类
+
+    1. [starklings交互式教程](https://github.com/shramee/starklings-cairo1) Basecamp的作业之一
+    2. [starknet-cairo-101](https://github.com/starknet-edu/starknet-cairo-101) Basecamp的作业之一
+    3. [awesome-cairo](https://github.com/auditless/awesome-cairo#libraries) 汇总了很多开源的Cairo项目，包含很多优秀的实现案例
+    4. [Openzepplin的合约仓库](https://github.com/OpenZeppelin/cairo-contracts/tree/cairo-1)
+    5. [Cairo核心库源码](https://github.com/starkware-libs/cairo/blob/main/corelib/src)
+
+ **最小安装选项：**
 
 系统：curl，git
 IDE：VSCode或任何你喜欢的编辑器（唯独不要使用windows自带的notepad）
@@ -35,35 +51,6 @@ Cairo 0.x的CLI工具。
 
 https://forge.rust-lang.org/infra/other-installation-methods.html#rustup
 
-
-# 安装 Python
-
-旧Cairo-CLI需要的是python 3.9版本。为了避免和已经安装的冲突，和rust一样，我们推荐使用python版本管理工具pyenv来安装python。
-
-**MacOS：**
-
-    brew update
-    brew install pyenv
-或者
-
-    curl https://pyenv.run | bash
-
-之后
-
-    pyenv install 3.9
-    pyenv global 3.9
-
-**Linux：**
-
-    curl https://pyenv.run | bash
-之后
-
-    pyenv install 3.9
-    pyenv global 3.9
-
-
-或者直接简单的安装一个py3.9版本
-https://www.python.org/downloads/release/python-3915/
 
 # 安装 Cairo
 在终端中输入如下命令，从Github上Clone最新的Cairo repo
@@ -103,7 +90,7 @@ https://www.python.org/downloads/release/python-3915/
 
 执行如下命令：
 
-    cargo run --bin cairo-run -- starknetastro.cairo
+    cargo run --bin cairo-run -- hellostarknetastro.cairo
 
 这时，终端里会输出类似以下内容
 
@@ -132,10 +119,42 @@ Cairo自带了一些范例，我们可以用如下命令编译
 
 当然，一般来说，只有需要部署到starknet上时才需要编译Cairo合约到casm。无特殊需求我们一般不需要编译单纯的Cairo代码到casm。
 
+# 安装 Python
+
+旧Cairo-CLI需要的是python 3.9版本。为了避免和已经安装的冲突，和rust一样，我们推荐使用python版本管理工具pyenv来安装python。
+
+**MacOS：**
+
+    brew update
+    brew install pyenv
+或者
+
+    curl https://pyenv.run | bash
+
+之后
+
+    pyenv install 3.9
+    pyenv global 3.9
+
+**Linux：**
+
+    curl https://pyenv.run | bash
+之后
+
+    pyenv install 3.9
+    pyenv global 3.9
+
+验证是否安装成功
+
+    python3.9 --version
+
+或者直接简单的安装一个py3.9版本
+https://www.python.org/downloads/release/python-3915/
+
 
 # 可选内容：安装Cairo 0.x CLI
 
-我们需要先安装GMP环境支持
+此CLI用于部署starknet合约。我们需要先安装GMP环境支持
 
 linux
 
