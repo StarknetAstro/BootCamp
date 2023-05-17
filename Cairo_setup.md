@@ -1,4 +1,20 @@
-﻿ **最小安装选项：**
+﻿**学习资料推荐：**
+
+- 文档类
+
+    1. [cairo-book](https://cairo-book.github.io/title-page.html), 社区中的成员模仿 [rust-book](https://doc.rust-lang.org/book/) 写的一本书，目前是相对较全面的一份资料
+    2. [Cairo Github仓库里的文档](https://github.com/starkware-libs/cairo/tree/main/docs/reference/src/components/cairo/modules/language_constructs/pages)，这是官方文档，但是还在撰写中
+    3. [一位来自 Argent X 的非洲励志哥总结的文档](https://github.com/Starknet-Africa-Edu/Cairo1.0/tree/main/chapters)
+
+- 代码案例类
+
+    1. [starklings交互式教程](https://github.com/shramee/starklings-cairo1) Basecamp的作业之一
+    2. [starknet-cairo-101](https://github.com/starknet-edu/starknet-cairo-101) Basecamp的作业之一
+    3. [awesome-cairo](https://github.com/auditless/awesome-cairo#libraries) 汇总了很多开源的Cairo项目，包含很多优秀的实现案例
+    4. [Openzepplin的合约仓库](https://github.com/OpenZeppelin/cairo-contracts/tree/cairo-1)
+    5. [Cairo核心库源码](https://github.com/starkware-libs/cairo/blob/main/corelib/src)
+
+ **最小安装选项：**
 
 系统：curl，git
 IDE：VSCode或任何你喜欢的编辑器（唯独不要使用windows自带的notepad）
