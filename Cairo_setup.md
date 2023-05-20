@@ -1,15 +1,16 @@
 ﻿**学习资料推荐：**
 
 - 文档类
-
-    1. [cairo-book](https://cairo-book.github.io/title-page.html), 社区中的成员模仿 [rust-book](https://doc.rust-lang.org/book/) 写的一本书，目前是相对较全面的一份资料
-    2. [Cairo Github仓库里的文档](https://github.com/starkware-libs/cairo/tree/main/docs/reference/src/components/cairo/modules/language_constructs/pages)，这是官方文档，但是还在撰写中
-    3. [一位来自 Argent X 的非洲励志哥总结的文档](https://github.com/Starknet-Africa-Edu/Cairo1.0/tree/main/chapters)
+    1. [Starknet Astro Boot Camp](https://github.com/StarknetAstro/BootCamp),
+    本次Boot Camp的文档。
+    2. [cairo-book](https://cairo-book.github.io/title-page.html), 社区中的成员模仿 [rust-book](https://doc.rust-lang.org/book/) 写的一本书，目前是相对较全面的一份资料
+    3. [Cairo Github仓库里的文档](https://github.com/starkware-libs/cairo/tree/main/docs/reference/src/components/cairo/modules/language_constructs/pages)，这是官方文档，但是还在撰写中
+    4. [一位来自 Argent X 的非洲励志哥总结的文档](https://github.com/Starknet-Africa-Edu/Cairo1.0/tree/main/chapters)
 
 - 代码案例类
 
-    1. [starklings交互式教程](https://github.com/shramee/starklings-cairo1) Basecamp的作业之一
-    2. [starknet-cairo-101](https://github.com/starknet-edu/starknet-cairo-101) Basecamp的作业之一
+    1. [starklings交互式教程](https://github.com/shramee/starklings-cairo1) 运行于本地环境的交互式教程。Starknet Basecamp的作业之一。
+    2. [starknet-cairo-101](https://github.com/starknet-edu/starknet-cairo-101) 针对Cairo合约的教程。Basecamp的作业之一。
     3. [awesome-cairo](https://github.com/auditless/awesome-cairo#libraries) 汇总了很多开源的Cairo项目，包含很多优秀的实现案例
     4. [Openzepplin的合约仓库](https://github.com/OpenZeppelin/cairo-contracts/tree/cairo-1)
     5. [Cairo核心库源码](https://github.com/starkware-libs/cairo/blob/main/corelib/src)
@@ -36,16 +37,16 @@ Cairo 0.x的CLI工具。
 
 之后重启命令行终端即可验证是否安装成功，或者在终端内执行以下命令：
 
-    
+
     ~ $ source "$HOME/.cargo/env"
 
 验证版本
 
-    
+
     ~ $ rustup --version
     rustup 1.25.2 (17db695f1 2023-02-01)
 
- 
+
 
 如果你没有安装curl，也可以在此处下载rust的各种系统的安装包
 
@@ -55,13 +56,13 @@ https://forge.rust-lang.org/infra/other-installation-methods.html#rustup
 # 安装 Cairo
 在终端中输入如下命令，从Github上Clone最新的Cairo repo
 
-    
+
     git clone https://github.com/starkware-libs/cairo/ ./cairo
 
 
 注意，alpha的一些版本可能是starknet不支持的，所以我们需要指定特定的tag，现阶段starknet支持的稳定版本是v1.0.0-rc0。
 
-    
+
     cd /cairo
     git checkout tags/v1.0.0-rc0
 
@@ -71,7 +72,7 @@ https://forge.rust-lang.org/infra/other-installation-methods.html#rustup
 测试是否成功
 
     cargo run --bin starknet-compile --help
-    
+
 或者
 
     ./target/release/starknet-compile --version
@@ -106,13 +107,13 @@ Cairo自带了一些范例，我们可以用如下命令编译
 或者使用
 
     target/release/cairo-compile examples/fib.cairo output/fib.json
-    
+
    这里我们输出的其实是中间代码，Cairo称之为Sierra。
    如果想输出可以直接在Cairo-VM上执行的文件，我们需要进一步把Sierra编译称Cairo汇编（casm）文件。
 
     cargo run --bin sierra-compile -- output/fib.json output/fib.casm
-    
-    
+
+
 或者
 
     target/release/sierra-compile -- output/fib.json output/fib.casm
@@ -199,5 +200,3 @@ MACOS(M1～芯片)
 输出：
 
     starknet 0.11.1
-
-
