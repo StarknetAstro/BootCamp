@@ -1,3 +1,7 @@
+
+![image](ipfs://bafybeihonbq2bp7irm5cwynnfgrz7qbw2p2tmv667wii4jw2et2xnixa34)
+
+
 **学习资料推荐：**
 
 - 文档类
@@ -63,7 +67,7 @@ https://forge.rust-lang.org/infra/other-installation-methods.html#rustup
 注意，alpha的一些版本可能是starknet不支持的，所以我们需要指定特定的tag，现阶段starknet支持的稳定版本是v1.0.0-rc0。
 
 
-    cd /cairo
+    cd ./cairo
     git checkout tags/v1.0.0-rc0
 
 之后我们就可以build整个Cairo了
@@ -92,6 +96,9 @@ https://forge.rust-lang.org/infra/other-installation-methods.html#rustup
 执行如下命令：
 
     cargo run --bin cairo-run -- hellostarknetastro.cairo
+
+或者使用上面编译好的relese中的来进行执行
+    target/release/cairo-run hellostarknetastro.cairo
 
 这时，终端里会输出类似以下内容
 
