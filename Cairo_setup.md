@@ -1,4 +1,4 @@
-﻿**学习资料推荐：**
+**学习资料推荐：**
 
 - 文档类
     1. [Starknet Astro Boot Camp](https://github.com/StarknetAstro/BootCamp),
@@ -28,7 +28,7 @@ MacOS：homebrew
 Cairo 0.x的CLI工具。
 
 
-# 安装 Rust
+##  安装 Rust
 
 建议通过 rustup ([docs](https://www.rust-lang.org/tools/install)) 来安装rust。rustup可以切换rust版本和升级。
 
@@ -53,7 +53,7 @@ Cairo 0.x的CLI工具。
 https://forge.rust-lang.org/infra/other-installation-methods.html#rustup
 
 
-# 安装 Cairo
+## 安装 Cairo
 在终端中输入如下命令，从Github上Clone最新的Cairo repo
 
 
@@ -78,7 +78,7 @@ https://forge.rust-lang.org/infra/other-installation-methods.html#rustup
     ./target/release/starknet-compile --version
 
 
-# 执行 .cairo 文件
+## 执行 .cairo 文件
 让我们先编写一个测试用Cairo文件。在当前目录下创建一个新的文件。
 文件名为：`hellostarknetastro.cairo`
 
@@ -97,10 +97,15 @@ https://forge.rust-lang.org/infra/other-installation-methods.html#rustup
 
     [DEBUG]  Hello, StarknetAstro!  (raw: 105807143882116536446217580363080108601441594273569)
 
-# 编译 .cairo 文件
+## 编译 .cairo 文件
 
 
-Cairo自带了一些范例，我们可以用如下命令编译
+Cairo自带了一些范例，我们可以用如下命令编译:
+首先我们在cairo根目录下创建一个文件夹用来保存输出
+
+    mkdir output
+
+之后使用cargo进行编译
 
     cargo run --bin cairo-compile examples/fib.cairo output/fib.json
 
@@ -108,8 +113,8 @@ Cairo自带了一些范例，我们可以用如下命令编译
 
     target/release/cairo-compile examples/fib.cairo output/fib.json
 
-   这里我们输出的其实是中间代码，Cairo称之为Sierra。
-   如果想输出可以直接在Cairo-VM上执行的文件，我们需要进一步把Sierra编译称Cairo汇编（casm）文件。
+这里我们输出的其实是中间代码， Cairo称之为Sierra。
+如果想输出可以直接在Cairo-VM上执行的文件，我们需要进一步把Sierra编译称Cairo汇编（casm）文件。
 
     cargo run --bin sierra-compile -- output/fib.json output/fib.casm
 
@@ -120,7 +125,7 @@ Cairo自带了一些范例，我们可以用如下命令编译
 
 当然，一般来说，只有需要部署到starknet上时才需要编译Cairo合约到casm。无特殊需求我们一般不需要编译单纯的Cairo代码到casm。
 
-# 安装 Python
+## 安装 Python
 
 旧Cairo-CLI需要的是python 3.9版本。为了避免和已经安装的冲突，和rust一样，我们推荐使用python版本管理工具pyenv来安装python。
 
@@ -153,7 +158,7 @@ Cairo自带了一些范例，我们可以用如下命令编译
 https://www.python.org/downloads/release/python-3915/
 
 
-# 可选内容：安装Cairo 0.x CLI
+## 可选内容：安装Cairo 0.x CLI
 
 此CLI用于部署starknet合约。我们需要先安装GMP环境支持
 
