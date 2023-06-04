@@ -1,4 +1,4 @@
-
+# （BootCamp Lesson2）在 Starknet 测试网上部署 ERC-20 代币
 
 ![WechatIMG691](ipfs://bafybeieodf46rumntntlfcofeuw3o3xcpibhekt57id2c2nnm5e63367tm)
 
@@ -16,8 +16,33 @@
 在你安装Cairo的目录下执行如下命令：
 
 ```
-git checkout tags/v1.1.0
+git checkout main
 cargo build --all --release
+```
+
+此外，根据上节课的反馈，很多同学在安装python后依然无法正常编译，在这里给出一些常见问题的解决方法：
+1. `linker 'cc' not found`，找不到cc的链接器，可用下面方案解决。
+
+```
+sudo apt install build-essential
+```
+当然为了以防万一，可以直接来一整套：
+```
+sudo apt-get install build-essential libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl libbz2-dev libreadline-dev
+```
+
+2. `ModuleNotFoundError: No module named '_ctypes'`
+解决方案比较麻烦，要重新安装python。
+
+```
+pyenv uninstall 3.9.16
+sudo yum install libffi-devel
+pyenv install 3.9.16
+```
+
+3. `use_2to3 is invalid.`有时候会莫名奇妙发生。
+```
+pip install -U setuptools
 ```
 
 
@@ -122,7 +147,7 @@ Transaction hash: 0x交易地址
 执行如下命令：
 
 ```
-mkdir src Sierra
+mkdir src sierra
 touch src/example.cairo
 ```
 之后，在 `src/example.cairo` 中填入测试内容：
