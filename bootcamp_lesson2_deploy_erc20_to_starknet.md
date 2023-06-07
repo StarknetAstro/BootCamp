@@ -1,4 +1,4 @@
-# （BootCamp Lesson2）在 Starknet 测试网上部署 ERC-20 代币
+
 
 ![WechatIMG691](ipfs://bafybeieodf46rumntntlfcofeuw3o3xcpibhekt57id2c2nnm5e63367tm)
 
@@ -17,6 +17,7 @@
 
 ```
 git checkout main
+git pull
 cargo build --all --release
 ```
 
