@@ -8,3 +8,8 @@
 - [说明文件](bootcamp_lesson2_deploy_erc20_to_starknet.md)
 - [代码](/bootcamp_lesson2_source_code)
 - [xlog博客](https://starknetastro.xlog.app/bootcamp_lesson2_deploy_erc20_to_starknet)
+
+## 第三课 在 Starknet 测试网上部署 ERC-721 代币
+- [说明文件](bootcamp_lesson3_deploy_erc721_to_starknet.md)
+- [代码](/bootcamp_lesson3_source_code)
+- [xlog博客](https://starknetastro.xlog.app/bootcamp_lesson3_deploy_erc721_to_starknet)
