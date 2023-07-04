@@ -1,7 +1,8 @@
 
 ![image](ipfs://bafybeihonbq2bp7irm5cwynnfgrz7qbw2p2tmv667wii4jw2et2xnixa34)
 
-
+**注意！由于Cairo语言变化，此教程已经过期。1.10语法请参考此文 https://starknetastro.xlog.app/Starknet_Shanghai_Workshop_DAY1**
+---
 **学习资料推荐：**
 
 - 文档类

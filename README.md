@@ -13,3 +13,11 @@
 - [说明文件](bootcamp_lesson3_deploy_erc721_to_starknet.md)
 - [代码](/bootcamp_lesson3_source_code)
 - [xlog博客](https://starknetastro.xlog.app/bootcamp_lesson3_deploy_erc721_to_starknet)
+
+
+# Starknet Shanghai Cairo Workshop
+
+## (Starknet Shanghai Workshop)Cairo中ERC标准的实现：环境配置以及实操
+- [说明文件](Starknet_Shanghai_Workshop_DAY1.md)
+- [代码](/workshop_source_code)
+- [xlog博客](https://starknetastro.xlog.app/Starknet_Shanghai_Workshop_DAY1)

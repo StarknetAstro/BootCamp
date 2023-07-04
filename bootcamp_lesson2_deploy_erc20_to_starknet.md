@@ -2,6 +2,9 @@
 
 ![WechatIMG691](ipfs://bafybeieodf46rumntntlfcofeuw3o3xcpibhekt57id2c2nnm5e63367tm)
 
+**注意！由于Cairo语言变化，此教程已经过期。最新的1.10以及语法请参考此文 https://starknetastro.xlog.app/Starknet_Shanghai_Workshop_DAY1**
+---
+
 ## 简介
 本课程作为一个快速上手的BootCamp将不会过于深入的讲解Cairo语言的特性（但我们最后一节课将稍微深入的介绍一下Cairo语言其他有用的部分）。
 
