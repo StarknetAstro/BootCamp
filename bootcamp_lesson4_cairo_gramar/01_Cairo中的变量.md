@@ -11,6 +11,7 @@ use debug::PrintTrait;
 
 fn main() {
     let x = 5;
+    let y:u8 = 6;
     x.print();
 }
 ```

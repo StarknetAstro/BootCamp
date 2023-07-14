@@ -37,7 +37,7 @@ Run completed successfully, returning [10]
 使用 `#[starknet::contract]` 开头，在 mod 后面加上合约名。
 
 ```
-#[contract]
+#[starknet::contract]
 mod ERC20 {
 	...
 }
