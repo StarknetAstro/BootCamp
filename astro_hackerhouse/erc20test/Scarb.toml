@@ -1,0 +1,17 @@
+[package]
+name = "erc20test"
+version = "0.1.0"
+
+# See more keys and their definitions at https://docs.swmansion.com/scarb/docs/reference/manifest
+
+[dependencies]
+starknet = "2.0.2"
+
+[scripts]
+setup = "export STARKNET_RPC=https://starknet-mainnet.infura.io/v3/f9bcdb2dd0364999add1a23c8bc365a8"
+
+[[target.starknet-contract]]
+# Enable Sierra codegen.
+sierra = true
+# Enable CASM codegen.
+casm = false
